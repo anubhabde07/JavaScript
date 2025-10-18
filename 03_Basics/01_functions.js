@@ -30,3 +30,35 @@ function userLoginMessage(username = "Guest"){
 // console.log(userLoginMessage('Anubhab'));
 
 console.log(userLoginMessage());
+
+
+function calculateCartPrice(...num){
+    return num;
+}
+
+console.log(calculateCartPrice(200,300,400,500));
+
+const user = {
+    username: "Anubhab",
+    age: 20
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and age is ${anyObject.age}`)
+}
+
+handleObject(user);
+
+handleObject({
+    username: "Alex",
+    age: 21,
+    gender: 'M'
+})
+
+const myArr = [200,400,500,900];
+
+function returnSecondValue(array){
+    return array[1];
+}
+
+console.log(returnSecondValue(myArr));
