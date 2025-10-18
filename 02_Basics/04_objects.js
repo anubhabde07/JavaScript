@@ -33,7 +33,7 @@ const obj2 = {
 
 const obj3 = {...obj1, ...obj2}
 
-console.log(obj3);
+// console.log(obj3);
 
 const users = [
     {
@@ -58,8 +58,21 @@ const users = [
     }
 ]
 
-console.log(users[2].email);
+// console.log(users[2].email);
 
-console.log(Object.keys(appleUser));
-console.log(Object.values(appleUser));
-console.log(Object.entries(appleUser));
+// console.log(Object.keys(appleUser));
+// console.log(Object.values(appleUser));
+// console.log(Object.entries(appleUser));
+
+
+const course = {
+    courseName: 'Gen AI with LLMs',
+    price: 270,
+    courseInstructor: 'Andrew Ng',
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course;  // destructuring
+
+console.log(courseInstructor);
